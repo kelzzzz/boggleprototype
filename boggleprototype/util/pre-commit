@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Running Maven Build"
+cd boggleprototype
+mvn clean install
