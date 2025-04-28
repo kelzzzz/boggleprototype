@@ -14,7 +14,7 @@ public class Boggle implements ApplicationListener {
 
 	@Override
 	public void create () {
-		LOGGER.info("Creating main viewport and window.");
+		LOGGER.info("Creating main viewport.");
 		viewport = new FitViewport(8,5);
 	}
 
