@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/graphics/LetterTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/graphics/LetterTile.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Kels-UI",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gurom/Filessss/ensea/Java Final/boggleprototype/boggleprototype/pom.xml",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Kels-UI&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gurom/Filessss/ensea/Java Final/boggleprototype/boggleprototype/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype" />
