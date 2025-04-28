@@ -1,34 +1,30 @@
 package org.ENSEACS.core;
 
 import com.badlogic.gdx.graphics.GL30;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.utils.viewport.FitViewport;
+import org.ENSEACS.core.graphics.LetterTile;
 
 public class Boggle implements ApplicationListener {
-	Texture texture;
-	SpriteBatch batch;
-	float elapsed;
+	FitViewport viewport;
+	LetterTile lt = new LetterTile();
 
 	@Override
 	public void create () {
-		texture = new Texture(Gdx.files.internal("libgdx-logo.png"));
-		batch = new SpriteBatch();
+		viewport = new FitViewport(8,5);
+		lt.create();
 	}
 
 	@Override
 	public void resize (int width, int height) {
+		viewport.update(width, height, true); // true centers the camera
 	}
 
 	@Override
 	public void render () {
-		elapsed += Gdx.graphics.getDeltaTime();
 		Gdx.gl.glClearColor(0, 0, 0, 0);
 		Gdx.gl.glClear(GL30.GL_COLOR_BUFFER_BIT);
-		batch.begin();
-		batch.draw(texture, 100+100*(float)Math.cos(elapsed), 100+25*(float)Math.sin(elapsed));
-		batch.end();
 	}
 
 	@Override
