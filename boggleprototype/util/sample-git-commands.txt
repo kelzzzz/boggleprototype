@@ -1,4 +1,5 @@
 git status #Check files you've edited
 git add . #Add all the working files on local
 git commit -m "#Issuenumber Message Goes Here"
-git push origin "Push to github"
+git push origin #Push to github
+git pull #Pull local changes
