@@ -12,5 +12,6 @@ public class BoggleDesktop {
 		config.height = 700;
 		config.width = 1000;
 		new LwjglApplication(new Boggle(), config);
+		//hello
 	}
 }
