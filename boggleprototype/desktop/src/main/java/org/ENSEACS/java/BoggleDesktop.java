@@ -9,8 +9,8 @@ public class BoggleDesktop {
 	public static void main (String[] args) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.title = "ENSEA Boggle";
-		config.height = 700;
-		config.width = 1000;
+		config.height = 324;
+		config.width = 540;
 		new LwjglApplication(new Boggle(), config);
 	}
 }

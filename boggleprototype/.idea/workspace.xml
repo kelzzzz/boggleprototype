@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/graphics/LetterTileGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/graphics/LetterTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/graphics/LetterTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/graphics/LetterTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/main/java/org/ENSEACS/java/BoggleDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/main/java/org/ENSEACS/java/BoggleDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/target/classes/org/ENSEACS/java/BoggleDesktop.class" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/classes/org/ENSEACS/java/BoggleDesktop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +49,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.boggleprototype [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Kels-UI&quot;,

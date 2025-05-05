@@ -77,7 +77,6 @@
 				<classifier>sources</classifier>
 				<scope>provided</scope>
 			</dependency>
-
 			<dependency>
 				<groupId>com.badlogicgames.gdx</groupId>
 				<artifactId>gdx-backend-gwt</artifactId>
@@ -104,6 +103,11 @@
 			<id>gdx-releases</id>
 			<url>https://oss.sonatype.org/content/repositories/releases/</url>
 		</repository>
+		<repository>
+			<id>maven-respository</id>
+			<url>https://mvnrepository.com/</url>
+		</repository>
+
 	</repositories>
 
 	<build>
