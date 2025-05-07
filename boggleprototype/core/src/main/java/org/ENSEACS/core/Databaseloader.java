@@ -1,33 +1,35 @@
 package org.ENSEACS.core;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.files.FileHandle;
-
-import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.*;
 public class Databaseloader {
 
-    public static Connection loadToMyMemoryDB(){
-        Connection memconnection = null;
-
+    public static Connection loadToMyMemoryDB() {
+        String userDirectory = System.getProperty("user.dir");
+        Path databasePath = Paths.get(userDirectory, "assets", "dictionary.db");
+        if (!Files.exists(databasePath)) {
+            databasePath = Paths.get(userDirectory, "..", "assets", "dictionary.db").normalize();
+        }
+        if (!Files.exists(databasePath)) {
+            throw new RuntimeException("dictionary.db file not found in:\n  " + Paths.get(userDirectory, "assets", "dictionary.db") + "\n  " + Paths.get(userDirectory, "..", "assets", "dictionary.db"));
+        }
+        String filePath = databasePath.toAbsolutePath().toString();
         try {
-            FileHandle databaseFile = Gdx.files.internal("dictionary.db");
-            String filePath = databaseFile.file().getAbsolutePath();
+            Connection diskConn = DriverManager.getConnection("jdbc:sqlite:" + filePath);
+            Connection memConn  = DriverManager.getConnection("jdbc:sqlite::memory:");
 
-            Connection fileConnection = DriverManager.getConnection("jdbc:sqlite:" + filePath);
-            memconnection = DriverManager.getConnection("jdbc:sqlite::memory:");
-
-            Statement something = memconnection.createStatement();
-            something.executeUpdate("ATTACH DATABASE '" + filePath + "' AS databaseFile;");
-            something.executeUpdate("CREATE TABLE words AS SELECT * FROM databaseFile.entries;");
-            something.executeUpdate("DETACH DATABASE databaseFile;");
-
-            fileConnection.close();
-            System.out.println("✅ Dictionary loaded into memory.");
+            try (Statement st = memConn.createStatement()) {
+                st.execute("ATTACH DATABASE '" + filePath + "' AS src;");
+                st.execute("CREATE TABLE entries AS SELECT * FROM src.entries;");
+                st.execute("DETACH DATABASE src;");
+            }
+            diskConn.close();
+            return memConn;
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Failed to load in-memory DB", e);
         }
-        return memconnection;
     }
 
 }
