@@ -4,10 +4,10 @@ import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-
+// comment
 public class Boggle implements ApplicationListener {
 	FitViewport viewport;
-
+	//For test commit
 	@Override
 	public void create () {
 		viewport = new FitViewport(8,5);
