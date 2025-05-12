@@ -6,12 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/core/src/test/java/Headless.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/database/Databaseloader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/database/WordChecker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-WordCheckerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/target/surefire-reports/WordCheckerTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/target/test-classes/Headless.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/target/test-classes/WordCheckerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desktop/target/classes/dictionary.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/Databaseloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/Databaseloader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/test/java/WordCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/WordCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/GameplayHUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/GameplayHUD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/LetterTileGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/LetterTileGrid.class" afterDir="false" />
@@ -21,9 +28,9 @@
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/TitleScreenState.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/TitleScreenState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/UIContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/UIContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/util/BoggleLetterDistributionGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/util/BoggleLetterDistributionGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/target/antrun/build-main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/antrun/build-main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/target/classes/org/ENSEACS/java/BoggleDesktop.class" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/classes/org/ENSEACS/java/BoggleDesktop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,13 +64,14 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.WordCheckerTest.executor": "Run",
+    "Maven.boggleprototype [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Kels-UI",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/gurom/Filessss/ensea/Java Final/boggleprototype/boggleprototype/assets",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
