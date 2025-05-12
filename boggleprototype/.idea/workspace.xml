@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/dictionary.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/Databaseloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/WordChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/java/WordCheckerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/Headless.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/Databaseloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/Databaseloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/WordCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/WordCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/GameplayHUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/GameplayHUD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/LetterTileGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/componentUI/LetterTileGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/logicUI/LetterTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/logicUI/LetterTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/logicUI/LetterTileActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/logicUI/LetterTileActionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/MainGameplayState.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/MainGameplayState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/TitleScreenState.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/TitleScreenState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/UIContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/UI/stateUI/UIContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/util/BoggleLetterDistributionGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/util/BoggleLetterDistributionGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/target/antrun/build-main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/antrun/build-main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/target/boggleprototype-desktop-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +56,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.WordCheckerTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Kels-UI",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gurom/Filessss/ensea/Java Final/boggleprototype/boggleprototype/pom.xml",
+    "last_opened_file_path": "C:/Users/gurom/Filessss/ensea/Java Final/boggleprototype/boggleprototype/assets",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\src" />
+      <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\desktop\src\main" />
+      <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\desktop\src" />
       <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype" />
       <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\util" />
     </key>
@@ -60,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.WordCheckerTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.ENSEACS.java.BoggleDesktop" />
       <module name="boggleprototype-desktop" />
@@ -68,6 +88,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boggleprototype-core" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WordCheckerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.WordCheckerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WordCheckerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
