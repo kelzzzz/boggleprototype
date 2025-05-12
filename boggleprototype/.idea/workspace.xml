@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/dictionary.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/Databaseloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/database/WordChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/WordCheckerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +40,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "Maven.boggleprototype [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Kels-UI",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gurom/Filessss/ensea/edilsonfork/boggleprototype/boggleprototype/pom.xml",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "last_opened_file_path": "C:/Users/gurom/Filessss/ensea/Java Final/boggleprototype/boggleprototype/pom.xml",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype" />
       <recent name="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\util" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
