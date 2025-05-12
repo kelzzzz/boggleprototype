@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/componentUI/GameplayHUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/logicUI/LetterTileActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/stateUI/MainGameplayState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/stateUI/TitleScreenState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/stateUI/UIContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/util/BoggleLetterDistributionGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/Boggle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/graphics/LetterTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/logicUI/LetterTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/graphics/LetterTileGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/UI/componentUI/LetterTileGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/Boggle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/graphics/LetterTile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/graphics/LetterTile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/org/ENSEACS/core/graphics/LetterTileGrid.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

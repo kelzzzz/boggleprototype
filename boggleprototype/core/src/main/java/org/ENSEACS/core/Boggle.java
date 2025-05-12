@@ -10,6 +10,8 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import org.ENSEACS.core.UI.stateUI.MainGameplayState;
 import org.ENSEACS.core.UI.stateUI.UIContext;
 
+import java.util.ArrayList;
+
 import static com.badlogic.gdx.Application.LOG_INFO;
 
 /*
@@ -18,13 +20,10 @@ import static com.badlogic.gdx.Application.LOG_INFO;
 
 public class Boggle implements ApplicationListener {
 	private FitViewport viewport;
+
 	private static final Logger LOGGER = new Logger(Boggle.class.getName(),LOG_INFO);
 
-	/*TODO These could be in a list :/*/
-	private Texture backgroundTextureA;
-	private Texture backgroundTextureB;
-	private Texture backgroundTextureC;
-	private Texture backgroundTextureD;
+	private final ArrayList<Texture> bgTextures = new ArrayList<Texture>();
 
 	private SpriteBatch spriteBatch;
 
@@ -55,8 +54,8 @@ public class Boggle implements ApplicationListener {
 		uic.renderState();
 	}
 
-	private void drawBgTexture(Texture backgroundTextureA) {
-		spriteBatch.draw(backgroundTextureA, 0, 0, backgroundTextureA.getWidth(), backgroundTextureA.getHeight());
+	private void drawBgTexture(Texture backgroundTexture) {
+		spriteBatch.draw(backgroundTexture, 0, 0, backgroundTexture.getWidth(), backgroundTexture.getHeight());
 	}
 
 	@Override
@@ -72,16 +71,14 @@ public class Boggle implements ApplicationListener {
 	}
 
 	private void initBackgroundTextures() {
-		backgroundTextureA = new Texture(Gdx.files.internal("1.png"));
-		backgroundTextureB = new Texture(Gdx.files.internal("2.png"));
-		backgroundTextureC = new Texture(Gdx.files.internal("3.png"));
-		backgroundTextureD = new Texture(Gdx.files.internal("4.png"));
+		for(int i = 0; i < 4; i++){
+			this.bgTextures.add(new Texture(Gdx.files.internal((i+1)+".png")));
+		}
 	}
 
 	private void drawBackgroundTexturesBatch() {
-		drawBgTexture(backgroundTextureA);
-		drawBgTexture(backgroundTextureB);
-		drawBgTexture(backgroundTextureC);
-		drawBgTexture(backgroundTextureD);
+		for(Texture t : this.bgTextures){
+			drawBgTexture(t);
+		}
 	}
 }
