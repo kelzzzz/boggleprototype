@@ -1,7 +1,7 @@
 package org.ENSEACS.core.gamelogic;
 
 public class PointsCalculator {
-
+//Author: Thomas Czerwien
     public static int calculateScore(String word) {
         int length = word == null ? 0 : word.length();
         if (length < 3) return 0;

@@ -3,6 +3,7 @@ import org.ENSEACS.core.gamelogic.PointsCalculator;
 
 import java.util.ArrayList;
 
+/*Author: Thomas Czerwien*/
 public class Player {
     private int score = 0;
     private ArrayList<String> wordsCreated = new ArrayList<>();

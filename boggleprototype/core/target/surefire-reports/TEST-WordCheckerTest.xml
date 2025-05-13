@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="WordCheckerTest" time="0.816" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="WordCheckerTest" time="0.812" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Zulu\zulu-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\gurom\AppData\Local\Temp\surefire12358479927482855614\surefirebooter-20250513004807987_3.jar C:\Users\gurom\AppData\Local\Temp\surefire12358479927482855614 2025-05-13T00-48-07_108-jvmRun1 surefire-20250513004807987_1tmp surefire_0-20250513004807987_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\gurom\AppData\Local\Temp\surefire8032712799595292445\surefirebooter-20250513155023666_3.jar C:\Users\gurom\AppData\Local\Temp\surefire8032712799595292445 2025-05-13T15-50-23_079-jvmRun1 surefire-20250513155023666_1tmp surefire_0-20250513155023666_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\target\test-classes;C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\target\classes;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx\1.2.0\gdx-1.2.0.jar;C:\Users\gurom\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\gurom\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gurom\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\gurom\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gurom\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\gurom\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gurom\.m2\repository\org\xerial\sqlite-jdbc\3.36.0\sqlite-jdbc-3.36.0.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx-backend-lwjgl\1.2.0\gdx-backend-lwjgl-1.2.0.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl\2.9.1\lwjgl-2.9.1.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-windows.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-linux.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-osx.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;C:\Users\gurom\.m2\repository\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-linux.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-osx.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl_util\2.9.1\lwjgl_util-2.9.1.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\jlayer\jlayer\1.0.1-gdx\jlayer-1.0.1-gdx.jar;C:\Users\gurom\.m2\repository\org\jcraft\jorbis\0.0.17\jorbis-0.0.17.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx-platform\1.2.0\gdx-platform-1.2.0-natives-desktop.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="jdk.vendor.version" value="Zulu11.76+21-CA"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\gurom\AppData\Local\Temp\surefire12358479927482855614\surefirebooter-20250513004807987_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\gurom\AppData\Local\Temp\surefire8032712799595292445\surefirebooter-20250513155023666_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.25+9-LTS"/>
@@ -64,10 +64,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testifCarIsValid" classname="WordCheckerTest" time="0.039"/>
-  <testcase name="testforInvalidWord" classname="WordCheckerTest" time="0.017"/>
-  <testcase name="WordCaseInsensitive" classname="WordCheckerTest" time="0.005"/>
-  <testcase name="testifCrazyIsValid" classname="WordCheckerTest" time="0.016"/>
+  <testcase name="wordCaseInsensitive" classname="WordCheckerTest" time="0.028"/>
+  <testcase name="testForInvalidWord" classname="WordCheckerTest" time="0.018"/>
+  <testcase name="testIfCrazyIsValid" classname="WordCheckerTest" time="0.016"/>
+  <testcase name="testIfCarIsValid" classname="WordCheckerTest" time="0.016"/>
   <testcase name="testDatabaseConnectionIsValid" classname="WordCheckerTest" time="0.002">
     <system-out><![CDATA[Connection to database is a success
 ]]></system-out>

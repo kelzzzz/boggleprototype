@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71749c7-c9df-4864-9379-385a7c938eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/gamelogic/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/gamelogic/PointsCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/gamelogic/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/gamelogic/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/gamelogic/PointsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ENSEACS/core/gamelogic/PointsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/boggleprototype-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/surefire-reports/TEST-WordCheckerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-WordCheckerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/surefire-reports/WordCheckerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/surefire-reports/WordCheckerTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
