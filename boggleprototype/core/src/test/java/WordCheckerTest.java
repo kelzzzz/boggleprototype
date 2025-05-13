@@ -16,7 +16,6 @@ public class WordCheckerTest {
     @BeforeAll
     public static void setup() throws SQLException {
         Headless.loadHeadless();
-
         // We establish a Connection with the database and we call our method, LoadtoMyMEMORY
         connection = Databaseloader.loadToMyMemoryDB();
         // This variable will help us using our Word Checker class to check certain words
@@ -40,32 +39,32 @@ public class WordCheckerTest {
     // This test uses wordchecker to test if Car is a valid word / is in the database
     // If this test passes, this means, the word car is in the database
     @Test
-    void testifCarIsValid() {
+    void testIfCarIsValid() {
         Assertions.assertTrue(checkingword.isValid("car"));
     }
     // This test uses wordchecker to test if crazy is a valid word / is in the database
     // If this test passes, this means, the word crazy is in the database
     @Test
-    void testifCrazyIsValid(){
+    void testIfCrazyIsValid(){
         Assertions.assertTrue(checkingword.isValid("crazy"));
     }
     // We test if the code can recognize words that aren't on the dictionary
     // We expect words that are not in the dictionary, to be left out
     // We expect the code to alert us once it detects
     @Test
-    void testforInvalidWord() {
+    void testForInvalidWord() {
         Assertions.assertFalse(checkingword.isValid("abcdefgh"));
     }
     // This test makes us sure that even if you write the word with capital letter, it will still recognize the word and check
     // if is in the database
     @Test
-    public void WordCaseInsensitive() {
+    public void wordCaseInsensitive() {
         try {
-            Statement somethingToFind = connection.createStatement();
-            ResultSet result = somethingToFind.executeQuery("SELECT 1 FROM entries WHERE LOWER(word) = LOWER('Beautiful') LIMIT 1;");
+            Statement selectFindWordQuery = connection.createStatement();
+            ResultSet result = selectFindWordQuery.executeQuery("SELECT 1 FROM entries WHERE LOWER(word) = LOWER('Beautiful') LIMIT 1;");
             boolean found = result.next();
             result.close();
-            somethingToFind.close();
+            selectFindWordQuery.close();
             Assertions.assertTrue(found, "'Beautiful' should be found regardless of case.");
         } catch (SQLException e) {
             e.printStackTrace();

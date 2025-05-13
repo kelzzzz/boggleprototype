@@ -12,11 +12,11 @@ import org.ENSEACS.core.UI.componentUI.LetterTileGrid;
 public class MainGameplayState extends Game {
 
     private final Stage stage = new Stage();
-    private final LetterTileGrid lt = new LetterTileGrid();;
+    private LetterTileGrid lt;
 
     @Override
     public void create() {
-        lt.create(this.stage);
+        lt = new LetterTileGrid(stage);
     }
 
     @Override

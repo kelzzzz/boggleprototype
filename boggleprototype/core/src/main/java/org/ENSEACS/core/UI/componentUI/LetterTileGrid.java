@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import org.ENSEACS.core.UI.logicUI.LetterTile;
+import org.ENSEACS.core.UI.interactable.LetterTile;
 import org.ENSEACS.core.UI.logicUI.LetterTileActionListener;
 import org.ENSEACS.core.util.BoggleLetterDistributionGenerator;
 
@@ -26,8 +26,9 @@ public class LetterTileGrid{
     private final int Y_INIT = 20;
     private final int X_INCR = 55;
     private final int Y_INCR = 55;
+    private final int LETTER_BUTTON_DIMENSIONS = 50;
 
-    public void create(Stage stage) {
+    public LetterTileGrid(Stage stage) {
         Gdx.gl.glViewport(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         textButtonStyle.font = new BitmapFont();
         textButtonStyle.up = buttonSkin.getDrawable("button-small");
@@ -39,7 +40,7 @@ public class LetterTileGrid{
         for(int i = 0; i < 4; i++){
             for(int j = 0; j<4;j++){
                 y+=Y_INCR;
-                LetterTile lt = new LetterTile(x,y,textButtonStyle);
+                LetterTile lt = new LetterTile(x,y,LETTER_BUTTON_DIMENSIONS,LETTER_BUTTON_DIMENSIONS,textButtonStyle);
                 letterTiles.add(lt);
             }
             y=Y_INIT;

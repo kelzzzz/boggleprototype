@@ -3,6 +3,7 @@ package org.ENSEACS.core.UI.logicUI;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.utils.Logger;
+import org.ENSEACS.core.UI.interactable.LetterTile;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class LetterTileActionListener extends InputListener {
         this.tiles = tiles;
     }
 
+    @Override
     public void touchDragged (InputEvent event, float x, float y, int pointer) {
         for(LetterTile t : this.tiles){
             if(t.getButton().isOver() && !touched.contains(t) && hovering!=t){

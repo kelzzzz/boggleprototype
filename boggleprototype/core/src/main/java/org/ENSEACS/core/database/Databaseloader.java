@@ -16,11 +16,11 @@ public class Databaseloader {
             Connection connectionofDisk = DriverManager.getConnection("jdbc:sqlite:" + filePath);
             Connection connectionwMemory  = DriverManager.getConnection("jdbc:sqlite::memory:");
             // We run some queries of our database
-            Statement something = connectionwMemory.createStatement();
-            something.execute("ATTACH DATABASE '" + filePath + "' AS src;");
-            something.execute("CREATE TABLE entries AS SELECT * FROM src.entries;");
-            something.execute("DETACH DATABASE src;");
-            connectionofDisk .close();
+            Statement statement = connectionwMemory.createStatement();
+            statement.execute("ATTACH DATABASE '" + filePath + "' AS src;");
+            statement.execute("CREATE TABLE entries AS SELECT * FROM src.entries;");
+            statement.execute("DETACH DATABASE src;");
+            connectionofDisk.close();
             return connectionwMemory;
 
         } catch (SQLException e) {
