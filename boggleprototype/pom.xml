@@ -77,7 +77,6 @@
 				<classifier>sources</classifier>
 				<scope>provided</scope>
 			</dependency>
-
 			<dependency>
 				<groupId>com.badlogicgames.gdx</groupId>
 				<artifactId>gdx-backend-gwt</artifactId>
@@ -104,6 +103,11 @@
 			<id>gdx-releases</id>
 			<url>https://oss.sonatype.org/content/repositories/releases/</url>
 		</repository>
+		<repository>
+			<id>maven-respository</id>
+			<url>https://mvnrepository.com/</url>
+		</repository>
+
 	</repositories>
 
 	<build>
@@ -113,8 +117,15 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.5.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<workingDirectory>${project.basedir}/src/test/testassets</workingDirectory>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="WordCheckerTest" time="0.7" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\target\test-classes;C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\target\classes;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx\1.2.0\gdx-1.2.0.jar;C:\Users\gurom\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\gurom\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gurom\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\gurom\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gurom\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\gurom\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gurom\.m2\repository\org\xerial\sqlite-jdbc\3.36.0\sqlite-jdbc-3.36.0.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx-backend-lwjgl\1.2.0\gdx-backend-lwjgl-1.2.0.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl\2.9.1\lwjgl-2.9.1.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-windows.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-linux.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-osx.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;C:\Users\gurom\.m2\repository\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-linux.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-osx.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl_util\2.9.1\lwjgl_util-2.9.1.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\jlayer\jlayer\1.0.1-gdx\jlayer-1.0.1-gdx.jar;C:\Users\gurom\.m2\repository\org\jcraft\jorbis\0.0.17\jorbis-0.0.17.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx-platform\1.2.0\gdx-platform-1.2.0-natives-desktop.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Zulu\zulu-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\gurom\AppData\Local\Temp\surefire1476936639271064375\surefirebooter-20250513155142008_3.jar C:\Users\gurom\AppData\Local\Temp\surefire1476936639271064375 2025-05-13T15-51-41_413-jvmRun1 surefire-20250513155142008_1tmp surefire_0-20250513155142008_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\target\test-classes;C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\target\classes;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx\1.2.0\gdx-1.2.0.jar;C:\Users\gurom\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\gurom\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gurom\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\gurom\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gurom\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\gurom\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gurom\.m2\repository\org\xerial\sqlite-jdbc\3.36.0\sqlite-jdbc-3.36.0.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx-backend-lwjgl\1.2.0\gdx-backend-lwjgl-1.2.0.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl\2.9.1\lwjgl-2.9.1.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-windows.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-linux.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl-platform\2.9.1\lwjgl-platform-2.9.1-natives-osx.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;C:\Users\gurom\.m2\repository\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-linux.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;C:\Users\gurom\.m2\repository\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-osx.jar;C:\Users\gurom\.m2\repository\org\lwjgl\lwjgl\lwjgl_util\2.9.1\lwjgl_util-2.9.1.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\jlayer\jlayer\1.0.1-gdx\jlayer-1.0.1-gdx.jar;C:\Users\gurom\.m2\repository\org\jcraft\jorbis\0.0.17\jorbis-0.0.17.jar;C:\Users\gurom\.m2\repository\com\badlogicgames\gdx\gdx-platform\1.2.0\gdx-platform-1.2.0-natives-desktop.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\gurom"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Zulu\zulu-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu11.76+21-CA"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\gurom\AppData\Local\Temp\surefire1476936639271064375\surefirebooter-20250513155142008_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.25+9-LTS"/>
+    <property name="user.name" value="Kels"/>
+    <property name="path.separator" value=";"/>
+    <property name="org.lwjgl.input.Mouse.allowNegativeMouseCoords" value="true"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="org.lwjgl.librarypath" value="C:\Users\gurom\AppData\Local\Temp\libgdxKels\ccd07a7a"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.76+21-CA"/>
+    <property name="localRepository" value="C:\Users\gurom\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\gurom\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.25"/>
+    <property name="user.dir" value="C:\Users\gurom\Filessss\ensea\Java Final\boggleprototype\boggleprototype\core\src\test\testassets"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Zulu\zulu-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Git\mingw64\libexec\git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\gurom\bin;C:\Program Files\Zulu\zulu-11\bin;C:\Users\gurom\Downloads\OpenJDK8U-jdk_x64_windows_hotspot_8u442b06\jdk8u442-b06\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files (x86)\scala\bin;C:\Users\gurom\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0;%SYSTEMROOT%\System32\OpenSSH;C:\Users\gurom\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\gurom\AppData\Local\Programs\Python\Python39;C:\Users\gurom\AppData\Local\Microsoft\WindowsApps;C:\Users\gurom\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gurom\AppData\Local\Pandoc;C:\Users\gurom\AppData\Local\Programs\MiKTeX\miktex\bin\x64;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.25+9-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="wordCaseInsensitive" classname="WordCheckerTest" time="0.025"/>
+  <testcase name="testForInvalidWord" classname="WordCheckerTest" time="0.017"/>
+  <testcase name="testIfCrazyIsValid" classname="WordCheckerTest" time="0.016"/>
+  <testcase name="testIfCarIsValid" classname="WordCheckerTest" time="0.017"/>
+  <testcase name="testDatabaseConnectionIsValid" classname="WordCheckerTest" time="0.002">
+    <system-out><![CDATA[Connection to database is a success
+]]></system-out>
+  </testcase>
+</testsuite>
