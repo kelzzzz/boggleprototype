@@ -16,6 +16,7 @@ public class TitleScreenState extends Game {
     @Override
     public void create() {
         tsc = new TitleScreenComponents(this.stage);
+        Gdx.input.setInputProcessor(stage);
     }
 
     @Override
