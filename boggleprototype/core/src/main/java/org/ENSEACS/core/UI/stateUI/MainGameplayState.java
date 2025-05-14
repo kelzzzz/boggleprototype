@@ -3,7 +3,9 @@ package org.ENSEACS.core.UI.stateUI;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import org.ENSEACS.core.UI.componentUI.GameplayHUD;
 import org.ENSEACS.core.UI.componentUI.LetterTileGrid;
+import org.ENSEACS.core.gamelogic.Player;
 
 /*
  * Author: Kels C.
@@ -13,10 +15,12 @@ public class MainGameplayState extends Game {
 
     private final Stage stage = new Stage();
     private LetterTileGrid lt;
+    private GameplayHUD hud;
 
     @Override
     public void create() {
         lt = new LetterTileGrid(stage);
+        hud = new GameplayHUD(stage);
     }
 
     @Override
@@ -24,6 +28,7 @@ public class MainGameplayState extends Game {
         super.render();
         stage.draw();
         stage.act();
+        hud.updateHud();
         stage.getViewport().update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
     }
 }

@@ -20,7 +20,7 @@ public abstract class BoggleButton {
         button = new TextButton("",tbs);
     }
 
-    void formatButton(int x, int y) {
+    public void formatButton(int x, int y) {
         button.setBounds(x,y, dimensionsW, dimensionsH);
         button.setWidth(dimensionsW);
         button.setHeight(dimensionsH);
