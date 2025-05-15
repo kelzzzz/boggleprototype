@@ -26,6 +26,7 @@ public class Boggle implements ApplicationListener {
 
 	private final ArrayList<Texture> bgTextures = new ArrayList<Texture>();
 
+	private Texture thomasTestBg;
 	private SpriteBatch spriteBatch;
 
 	private final UIContext uic = new UIContext();
@@ -34,7 +35,8 @@ public class Boggle implements ApplicationListener {
 	public void create () {
 		LOGGER.info("Creating main viewport.");
 		viewport = new FitViewport(8,5);
-		initBackgroundTextures();
+		//initBackgroundTextures();
+		thomasTestBg = new Texture("assets/UnderTheSea.png");
 		spriteBatch = new SpriteBatch();
 		uic.setState(new TitleScreenState(this.uic));
 	}
@@ -50,7 +52,8 @@ public class Boggle implements ApplicationListener {
 		Gdx.gl.glClearColor(0, 0, 0, 0);
 		Gdx.gl.glClear(GL30.GL_COLOR_BUFFER_BIT);
 		spriteBatch.begin();
-		drawBackgroundTexturesBatch();
+		//drawBackgroundTexturesBatch();
+		drawBgTexture(this.thomasTestBg);
 		spriteBatch.end();
 		uic.renderState();
 	}

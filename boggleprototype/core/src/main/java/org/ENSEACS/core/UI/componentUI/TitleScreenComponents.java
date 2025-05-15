@@ -1,13 +1,17 @@
 package org.ENSEACS.core.UI.componentUI;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.Align;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import org.ENSEACS.core.UI.interactable.BoggleButton;
 import org.ENSEACS.core.UI.interactable.TitleScreenButton;
 import org.ENSEACS.core.UI.logicUI.TitleScreenButtonActionListener;
@@ -28,16 +32,13 @@ public class TitleScreenComponents {
     public TitleScreenComponents(Stage stage, UIContext uiContext){
         this.stage = stage;
         this.uiContext = uiContext;
+
         textButtonStyle.font = new BitmapFont();
+
         textButtonStyle.up = buttonSkin.getDrawable("button-small");
         textButtonStyle.down = buttonSkin.getDrawable("button-small-down");
 
-        Label Title = new Label("Boggle", buttonSkin);
-        Title.setFontScale(3f);
-        Title.setX(185);
-        Title.setY(235);
-        Title.setColor(0,30,200,1);
-        stage.addActor(Title);
+        initTitle(stage);
 
         Label authorTitle = new Label("Authors", buttonSkin);
         authorTitle.setVisible(false);
@@ -123,5 +124,11 @@ public class TitleScreenComponents {
 
 
 
+    }
+
+    private void initTitle(Stage stage) {
+        Image titleImage = new Image(new Texture(Gdx.files.internal("assets/GameTitle.png")));
+        titleImage.setPosition(125, 210);
+        stage.addActor(titleImage);
     }
 }
