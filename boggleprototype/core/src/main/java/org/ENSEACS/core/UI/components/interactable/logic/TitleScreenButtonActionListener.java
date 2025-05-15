@@ -1,6 +1,5 @@
-package org.ENSEACS.core.UI.logicUI;
+package org.ENSEACS.core.UI.components.interactable.logic;
 
-import com.badlogic.gdx.scenes.scene2d.Event;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 

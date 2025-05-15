@@ -1,4 +1,4 @@
-package org.ENSEACS.core.UI.stateUI;
+package org.ENSEACS.core.UI.state.children;
 
 /*
  * Author: Kels C.
@@ -7,7 +7,7 @@ package org.ENSEACS.core.UI.stateUI;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import org.ENSEACS.core.UI.componentUI.TitleScreenComponents;
+import org.ENSEACS.core.UI.stage.TitleScreenComponents;
 
 public class TitleScreenState extends Game {
     private final Stage stage = new Stage();

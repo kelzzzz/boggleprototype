@@ -1,13 +1,10 @@
 package org.ENSEACS.core.database;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.files.FileHandle;
-
-import java.net.URL;
 
 import java.sql.*;
 // EdilsonAlberto
 // Edilson Alberto - Databaseloader is a class that was created to help find first the file, in this case the dictionary
-public class Databaseloader {
+public class DatabaseLoader {
     // To load the file, we need a method that uses the Connection API class
     public static Connection loadToMyMemoryDB() {
         String filePath = Gdx.files.internal("assets/dictionary.db").file().getAbsolutePath();

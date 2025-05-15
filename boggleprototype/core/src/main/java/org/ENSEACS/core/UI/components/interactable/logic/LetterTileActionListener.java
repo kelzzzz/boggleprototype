@@ -1,10 +1,10 @@
-package org.ENSEACS.core.UI.logicUI;
+package org.ENSEACS.core.UI.components.interactable.logic;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.utils.Logger;
-import org.ENSEACS.core.UI.interactable.LetterTile;
-import org.ENSEACS.core.database.Databaseloader;
+import org.ENSEACS.core.UI.components.interactable.LetterTile;
+import org.ENSEACS.core.database.DatabaseLoader;
 import org.ENSEACS.core.database.WordChecker;
 import org.ENSEACS.core.gamelogic.Player;
 
@@ -20,15 +20,17 @@ import static com.badlogic.gdx.Application.LOG_INFO;
 public class LetterTileActionListener extends InputListener {
     private final ArrayList<LetterTile> tiles;
     private final ArrayList<LetterTile> touched = new ArrayList<LetterTile>();
+
     private static final Logger LOGGER = new Logger(LetterTileActionListener.class.getName(),LOG_INFO);
 
     private String word = "";
+
     private LetterTile hovering = null;
     private WordChecker checker;
 
     public LetterTileActionListener(ArrayList<LetterTile> tiles){
         try{
-            checker = new WordChecker(Databaseloader.loadToMyMemoryDB());
+            checker = new WordChecker(DatabaseLoader.loadToMyMemoryDB());
         }catch(SQLException e){
             e.printStackTrace();
         }

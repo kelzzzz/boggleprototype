@@ -1,15 +1,13 @@
-package org.ENSEACS.core.UI.stateUI;
-
-import com.badlogic.gdx.Game;
+package org.ENSEACS.core.UI.state;
 
 /*
  * Author: Kels C.
  * ENSEA 2025 */
 
 public class UIContext {
-    private Game state;
+    private GameState state;
 
-    public void setState(Game state){
+    public void setState(GameState state){
         this.state = state;
         this.state.create();
     }
