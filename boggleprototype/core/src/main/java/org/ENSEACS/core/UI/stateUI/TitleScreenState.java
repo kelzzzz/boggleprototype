@@ -12,10 +12,16 @@ import org.ENSEACS.core.UI.componentUI.TitleScreenComponents;
 public class TitleScreenState extends Game {
     private final Stage stage = new Stage();
     private TitleScreenComponents tsc;
+    private UIContext uic;
+
+    public TitleScreenState(UIContext uic) {
+        super();
+        this.uic = uic;
+    }
 
     @Override
     public void create() {
-        tsc = new TitleScreenComponents(this.stage);
+        tsc = new TitleScreenComponents(this.stage, this.uic);
         Gdx.input.setInputProcessor(stage);
     }
 

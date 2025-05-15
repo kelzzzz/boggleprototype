@@ -36,7 +36,7 @@ public class Boggle implements ApplicationListener {
 		viewport = new FitViewport(8,5);
 		initBackgroundTextures();
 		spriteBatch = new SpriteBatch();
-		uic.setState(new TitleScreenState());
+		uic.setState(new TitleScreenState(this.uic));
 	}
 
 

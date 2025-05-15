@@ -11,6 +11,10 @@ import com.badlogic.gdx.scenes.scene2d.utils.Align;
 import org.ENSEACS.core.UI.interactable.BoggleButton;
 import org.ENSEACS.core.UI.interactable.TitleScreenButton;
 import org.ENSEACS.core.UI.logicUI.TitleScreenButtonActionListener;
+import org.ENSEACS.core.UI.stateUI.MainGameplayState;
+import org.ENSEACS.core.UI.stateUI.UIContext;
+
+import javax.swing.*;
 
 public class TitleScreenComponents {
     /*TODO
@@ -19,9 +23,11 @@ public class TitleScreenComponents {
     private Stage stage;
     private final Skin buttonSkin = new Skin(Gdx.files.internal("skin/glassy-ui.json"));
     private final TextButton.TextButtonStyle textButtonStyle = new TextButton.TextButtonStyle();
+    private final UIContext uiContext;
 
-    public TitleScreenComponents(Stage stage){
+    public TitleScreenComponents(Stage stage, UIContext uiContext){
         this.stage = stage;
+        this.uiContext = uiContext;
         textButtonStyle.font = new BitmapFont();
         textButtonStyle.up = buttonSkin.getDrawable("button-small");
         textButtonStyle.down = buttonSkin.getDrawable("button-small-down");
@@ -60,10 +66,17 @@ public class TitleScreenComponents {
 
         BoggleButton StartButton = new TitleScreenButton(225,100,"Start",100,60,textButtonStyle);
         StartButton.addButtonToStage(stage);
+        StartButton.getButton().addListener(new TitleScreenButtonActionListener(uiContext){
+            @Override
+            public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+                uiContext.setState(new MainGameplayState());
+                return true;
+            }
+        });
 
         BoggleButton RulesButton = new TitleScreenButton(225,25,"Rules",100,60,textButtonStyle);
         RulesButton.addButtonToStage(stage);
-        RulesButton.getButton().addListener(new TitleScreenButtonActionListener(){
+        RulesButton.getButton().addListener(new TitleScreenButtonActionListener(uiContext){
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                 StartButton.getButton().setVisible(false);
@@ -74,7 +87,7 @@ public class TitleScreenComponents {
             }
         });
 
-        returnButton.getButton().addListener(new TitleScreenButtonActionListener(){
+        returnButton.getButton().addListener(new TitleScreenButtonActionListener(uiContext){
            @Override
            public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                StartButton.getButton().setVisible(true);
@@ -87,7 +100,7 @@ public class TitleScreenComponents {
 
         BoggleButton ExitButton = new TitleScreenButton(0,275,"X",40,40,textButtonStyle);
         ExitButton.addButtonToStage(stage);
-        ExitButton.getButton().addListener(new TitleScreenButtonActionListener(){
+        ExitButton.getButton().addListener(new TitleScreenButtonActionListener(uiContext){
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                 Gdx.app.exit();
