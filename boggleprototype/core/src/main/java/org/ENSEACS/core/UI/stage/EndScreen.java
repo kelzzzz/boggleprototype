@@ -2,7 +2,6 @@ package org.ENSEACS.core.UI.stage;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.scenes.scene2d.Event;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -54,7 +53,7 @@ public class EndScreen {
             @Override
             public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
                 if(isExit){
-                    exitResponse = true;
+                    Gdx.app.exit();
                 }
                 else{
                     playResponse = true;
@@ -66,9 +65,5 @@ public class EndScreen {
 
     public boolean clickPlayAgainResponse(){
         return this.playResponse;
-    }
-
-    public boolean clickExitResponse(){
-        return this.exitResponse;
     }
 }

@@ -31,21 +31,6 @@ public class GameState extends Game implements State {
     }
 
     @Override
-    public void clickExit() {
-
-    }
-
-    @Override
-    public void clickInfo() {
-
-    }
-
-    @Override
-    public void clickRules() {
-
-    }
-
-    @Override
     public void onTimerRunOut() {
 
     }

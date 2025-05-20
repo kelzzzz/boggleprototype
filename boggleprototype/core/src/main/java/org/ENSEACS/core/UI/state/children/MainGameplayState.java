@@ -44,15 +44,4 @@ public class MainGameplayState extends GameState {
         this.uic.setState(new EndScreenState(this.uic));
     }
 
-    @Override
-    public void clickPlay() {/*Do nothing*/}
-
-    @Override
-    public void clickExit() {/*Do nothing*/}
-
-    @Override
-    public void clickInfo() {/*Do nothing*/}
-
-    @Override
-    public void clickRules() {/*Do nothing*/}
 }

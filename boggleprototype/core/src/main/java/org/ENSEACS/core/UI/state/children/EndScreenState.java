@@ -22,30 +22,13 @@ public class EndScreenState extends GameState {
         stage.draw();
         stage.act();
         clickPlay();
-        clickExit();
         updateViewport();
     }
 
     @Override
     public void clickPlay() {
         if(this.es.clickPlayAgainResponse()){
-            this.uic.setState(new MainGameplayState(this.uic));
+            this.uic.setState(new TitleScreenState(this.uic));
         }
     }
-
-    @Override
-    public void clickExit() {
-        if(this.es.clickExitResponse()){
-            System.exit(0);
-        }
-    }
-
-    @Override
-    public void clickInfo() {}
-
-    @Override
-    public void clickRules() {}
-
-    @Override
-    public void onTimerRunOut() {}
 }

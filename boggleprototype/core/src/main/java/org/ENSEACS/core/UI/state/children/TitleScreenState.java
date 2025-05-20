@@ -8,21 +8,37 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import org.ENSEACS.core.UI.stage.TitleScreenComponents;
+import org.ENSEACS.core.UI.state.GameState;
+import org.ENSEACS.core.UI.state.UIContext;
 
-public class TitleScreenState extends Game {
+public class TitleScreenState extends GameState {
     private final Stage stage = new Stage();
     private TitleScreenComponents tsc;
+
+    public TitleScreenState(UIContext uic) {
+        super(uic);
+    }
 
     @Override
     public void create() {
         tsc = new TitleScreenComponents(this.stage);
+        Gdx.input.setInputProcessor(this.stage);
     }
 
     @Override
     public void render(){
         super.render();
         stage.draw();
+        clickPlay();
         stage.act();
         stage.getViewport().update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
     }
+
+    @Override
+    public void clickPlay() {
+        if(this.tsc.playResponse){
+            this.uic.setState(new MainGameplayState(this.uic));
+        }
+    }
+
 }

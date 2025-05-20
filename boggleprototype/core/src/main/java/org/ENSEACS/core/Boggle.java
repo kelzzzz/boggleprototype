@@ -9,6 +9,7 @@ import com.badlogic.gdx.utils.Logger;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import org.ENSEACS.core.UI.state.children.MainGameplayState;
 import org.ENSEACS.core.UI.state.UIContext;
+import org.ENSEACS.core.UI.state.children.TitleScreenState;
 
 import java.util.ArrayList;
 
@@ -35,7 +36,7 @@ public class Boggle implements ApplicationListener {
 		viewport = new FitViewport(8,5);
 		this.spriteBatch = new SpriteBatch();
 		this.backgroundTexture = new Texture(Gdx.files.internal(BACKGROUND_TEXTURE_PATH));
-		uic.setState(new MainGameplayState(uic));
+		uic.setState(new TitleScreenState(uic));
 	}
 
 
