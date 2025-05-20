@@ -55,7 +55,7 @@ public abstract class BoggleButton {
     public TextButton getButton() {
         return button;
     }
-
+    public Skin getSkin(){return this.skin;}
     public int getY() {
         return y;
     }

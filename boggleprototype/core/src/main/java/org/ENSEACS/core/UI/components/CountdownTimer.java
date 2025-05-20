@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 
 public class CountdownTimer extends BoggleButton {
 
-    private final long THREE_MINUTES_MILLIS = 180000;
+    private final long THREE_MINUTES_MILLIS = 5000;
     public static final String MINUTES_REGEX = "mm:ss";
     private final long endTime;
 
