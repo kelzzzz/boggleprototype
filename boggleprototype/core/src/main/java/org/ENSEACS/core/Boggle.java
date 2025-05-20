@@ -17,7 +17,7 @@ import static com.badlogic.gdx.Application.LOG_INFO;
 import static org.ENSEACS.core.util.Constants.BACKGROUND_TEXTURE_PATH;
 
 /*
- * Author: Kels C.
+ * Author: Kels C
  * ENSEA 2025 */
 
 public class Boggle implements ApplicationListener {

@@ -3,7 +3,9 @@ package org.ENSEACS.core.UI.state.children;
 import org.ENSEACS.core.UI.stage.EndScreen;
 import org.ENSEACS.core.UI.state.GameState;
 import org.ENSEACS.core.UI.state.UIContext;
-
+/*
+ * Author: Kels C.
+ * ENSEA 2025 */
 public class EndScreenState extends GameState {
 
     public EndScreenState(UIContext uic) {

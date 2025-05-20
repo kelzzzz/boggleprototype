@@ -7,7 +7,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 
 import static org.ENSEACS.core.util.Constants.SKIN_GLASSY_UI_JSON_PATH;
-
+/*
+ * Author: Kels C.
+ * ENSEA 2025 */
 public abstract class BoggleButton {
     private int x;
     private int y;
@@ -30,6 +32,8 @@ public abstract class BoggleButton {
 
         textButtonStyle.font = new BitmapFont();
         textButtonStyle.up = skin.getDrawable("button-small");
+        textButtonStyle.down = skin.getDrawable("button-small-down");
+
         button = new TextButton("",textButtonStyle);
         this.formatButton(x,y);
 
@@ -55,7 +59,9 @@ public abstract class BoggleButton {
     public TextButton getButton() {
         return button;
     }
+
     public Skin getSkin(){return this.skin;}
+
     public int getY() {
         return y;
     }

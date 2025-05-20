@@ -13,7 +13,9 @@ import org.ENSEACS.core.gamelogic.Player;
 
 import static org.ENSEACS.core.util.Constants.SCROLLPANE_TEXTURE_PATH;
 import static org.ENSEACS.core.util.Constants.SKIN_GLASSY_UI_JSON_PATH;
-
+/*
+ * Author: Kels C.
+ * ENSEA 2025 */
 public class WordScrollPane {
     private final Skin skin = new Skin(Gdx.files.internal(SKIN_GLASSY_UI_JSON_PATH));
 

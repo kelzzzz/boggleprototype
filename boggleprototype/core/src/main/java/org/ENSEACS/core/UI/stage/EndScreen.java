@@ -7,7 +7,11 @@ import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import org.ENSEACS.core.UI.components.interactable.BoggleButton;
+import org.ENSEACS.core.gamelogic.Player;
 
+/*
+ * Author: Kels C.
+ * ENSEA 2025 */
 public class EndScreen {
     Stage stage;
     public BoggleButton replayButton;
@@ -31,7 +35,8 @@ public class EndScreen {
     }
 
     private void initMessage() {
-        thanksMessage = new Label("Thanks for playing!",replayButton.getSkin());
+        thanksMessage = new Label("Thanks for playing! Your score: " + Player.getInstance().getScore(),
+                replayButton.getSkin());
         thanksMessage.setX(200);
         thanksMessage.setY(210);
         thanksMessage.setColor(Color.BLACK);
@@ -52,13 +57,16 @@ public class EndScreen {
         return new InputListener(){
             @Override
             public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+                return true;
+            }
+            @Override
+            public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 if(isExit){
                     Gdx.app.exit();
                 }
                 else{
                     playResponse = true;
                 }
-                return true;
             }
         };
     }
