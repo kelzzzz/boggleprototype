@@ -28,43 +28,68 @@ public class LetterTileActionListener extends InputListener {
     @Override
     public void touchDragged (InputEvent event, float x, float y, int pointer) {
         for(LetterTile t : this.tiles){
-            if(t.getButton().isOver() && !touched.contains(t) && hovering!=t){
-                hovering = t;
-                t.highlight();
-                touched.add(t);
+            if(hoveringOverNewTile(t)){
+                selectTile(t);
             }
-
-            else if(touched.contains(t) && t.getButton().isOver() && hovering!=t){
-                if(hovering!=null){
-                    hovering.unhighlight();
-                    touched.remove(hovering);
-                }
-                hovering = t;
+            else if(hoveringOverSelectedTile(t)){
+                deselectTile(t);
             }
 
         }
     }
 
+    @Override
     public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
         for(LetterTile t : this.tiles){
             if(t.getButton().isPressed()){
-                t.highlight();
-                if(!touched.contains(t)){
-                    touched.add(t);
-                }
+                addFirstTileToSelection(t);
             }
         }
         return true;
     }
 
+    @Override
     public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
         currentWord = "";
+        buildWordFromLetters();
+        Player.getInstance().addWord(currentWord);
+        LOGGER.info(currentWord);
+    }
+
+    private boolean hoveringOverSelectedTile(LetterTile t) {
+        return touched.contains(t) && t.getButton().isOver() && hovering != t;
+    }
+
+    private boolean hoveringOverNewTile(LetterTile t) {
+        return t.getButton().isOver() && !touched.contains(t) && hovering != t;
+    }
+
+    private void addFirstTileToSelection(LetterTile t) {
+        t.highlight();
+        if(!touched.contains(t)){
+            touched.add(t);
+        }
+    }
+
+    private void buildWordFromLetters() {
         for(LetterTile t : this.touched){
             t.unhighlight();
             currentWord = currentWord.concat(String.valueOf(t.getLetter()));
         }
         touched.clear();
-        Player.getInstance().addWord(currentWord);
-        LOGGER.info(currentWord);
+    }
+
+    private void deselectTile(LetterTile t) {
+        if(hovering!=null){
+            hovering.unhighlight();
+            touched.remove(hovering);
+        }
+        hovering = t;
+    }
+
+    private void selectTile(LetterTile t) {
+        hovering = t;
+        t.highlight();
+        touched.add(t);
     }
 }

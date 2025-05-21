@@ -6,7 +6,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 
-import static org.ENSEACS.core.util.Constants.SKIN_GLASSY_UI_JSON_PATH;
+import static org.ENSEACS.core.util.Constants.*;
+
 /*
  * Author: Kels C.
  * ENSEA 2025 */
@@ -31,8 +32,8 @@ public abstract class BoggleButton {
         this.dimensionsH = dimensionsH;
 
         textButtonStyle.font = new BitmapFont();
-        textButtonStyle.up = skin.getDrawable("button-small");
-        textButtonStyle.down = skin.getDrawable("button-small-down");
+        textButtonStyle.up = skin.getDrawable(BUTTON_SMALL_REGION);
+        textButtonStyle.down = skin.getDrawable(BUTTON_SMALL_DOWN_REGION);
 
         button = new TextButton("",textButtonStyle);
         this.formatButton(x,y);
