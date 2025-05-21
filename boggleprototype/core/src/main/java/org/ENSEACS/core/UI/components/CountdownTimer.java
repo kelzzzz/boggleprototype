@@ -3,13 +3,15 @@ package org.ENSEACS.core.UI.components;
 import org.ENSEACS.core.UI.components.interactable.BoggleButton;
 
 import java.text.SimpleDateFormat;
+
+import static org.ENSEACS.core.util.Constants.MINUTES_REGEX;
+import static org.ENSEACS.core.util.Constants.THREE_MINUTES_MILLIS;
+
 /*
  * Author: Kels C.
  * ENSEA 2025 */
 public class CountdownTimer extends BoggleButton {
 
-    private final long THREE_MINUTES_MILLIS = 180000;
-    public static final String MINUTES_REGEX = "mm:ss";
     private final long endTime;
 
     public CountdownTimer(int x, int y, int dimensionsW, int dimensionsH) {

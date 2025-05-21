@@ -1,29 +1,39 @@
 package org.ENSEACS.core.gamelogic;
+import org.ENSEACS.core.database.DatabaseLoader;
+import org.ENSEACS.core.database.WordChecker;
 import org.ENSEACS.core.gamelogic.PointsCalculator;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 /*Author: Thomas Czerwien*/
 public class Player {
     private static Player playerInstance;
     private int score = 0;
+    private WordChecker checker;
+    private ArrayList<String> wordsCreated = new ArrayList<>();
 
-    private Player(){
+    private Player(){            try{
+        checker = new WordChecker(DatabaseLoader.loadToMyMemoryDB());
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
     public static Player getInstance(){
         if(playerInstance == null){
             playerInstance = new Player();
+
         }
         return playerInstance;
     }
 
-    private ArrayList<String> wordsCreated = new ArrayList<>();
-
     public void addWord(String word) {
         if(!wordsCreated.contains(word) && word.length()>=3){
-            this.score += PointsCalculator.calculateScore(word);
-            this.wordsCreated.add(word);
+            if(checker.isValid(word)){
+                this.score += PointsCalculator.calculateScore(word);
+                this.wordsCreated.add(word);
+            }
         }
     }
 

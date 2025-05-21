@@ -24,10 +24,7 @@ public class Boggle implements ApplicationListener {
 	private FitViewport viewport;
 	private static final Logger LOGGER = new Logger(Boggle.class.getName(),LOG_INFO);
 	private Texture backgroundTexture;
-	private final ArrayList<Texture> bgTextures = new ArrayList<Texture>();
-
 	private SpriteBatch spriteBatch;
-
 	private final UIContext uic = new UIContext();
 
 	@Override

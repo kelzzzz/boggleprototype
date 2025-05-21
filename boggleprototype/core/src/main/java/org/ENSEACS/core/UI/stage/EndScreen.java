@@ -17,15 +17,14 @@ public class EndScreen {
     public BoggleButton replayButton;
     public BoggleButton exitButton;
     public boolean playResponse;
-    public boolean exitResponse;
-    public Label thanksMessage;
+    public Label thankYouMessage;
 
     public EndScreen(Stage stage){
         initComponents();
         this.stage = stage;
         this.stage.addActor(replayButton.getButton());
         this.stage.addActor(exitButton.getButton());
-        this.stage.addActor(thanksMessage);
+        this.stage.addActor(thankYouMessage);
         Gdx.input.setInputProcessor(this.stage);
     }
 
@@ -35,11 +34,11 @@ public class EndScreen {
     }
 
     private void initMessage() {
-        thanksMessage = new Label("Thanks for playing! Your score: " + Player.getInstance().getScore(),
+        thankYouMessage = new Label("Thanks for playing! Your score: " + Player.getInstance().getScore(),
                 replayButton.getSkin());
-        thanksMessage.setX(200);
-        thanksMessage.setY(210);
-        thanksMessage.setColor(Color.BLACK);
+        thankYouMessage.setX(200);
+        thankYouMessage.setY(210);
+        thankYouMessage.setColor(Color.BLACK);
     }
 
     private void initButtons() {

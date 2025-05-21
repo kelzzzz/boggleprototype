@@ -18,10 +18,8 @@ import static org.ENSEACS.core.util.Constants.SKIN_GLASSY_UI_JSON_PATH;
  * ENSEA 2025 */
 public class WordScrollPane {
     private final Skin skin = new Skin(Gdx.files.internal(SKIN_GLASSY_UI_JSON_PATH));
-
     private final Texture texture = new Texture(SCROLLPANE_TEXTURE_PATH); // Replace with a suitable image
     private final TextureRegionDrawable drawable = new TextureRegionDrawable(new TextureRegion(texture));
-
     private final Label display = new Label("",skin);
     private final Table container = new Table();
     private final ScrollPane scrollPane = new ScrollPane(container,skin);

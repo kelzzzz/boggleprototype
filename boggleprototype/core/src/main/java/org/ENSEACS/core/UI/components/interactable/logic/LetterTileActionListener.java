@@ -4,11 +4,8 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.utils.Logger;
 import org.ENSEACS.core.UI.components.interactable.LetterTile;
-import org.ENSEACS.core.database.DatabaseLoader;
-import org.ENSEACS.core.database.WordChecker;
 import org.ENSEACS.core.gamelogic.Player;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 import static com.badlogic.gdx.Application.LOG_INFO;
@@ -20,21 +17,11 @@ import static com.badlogic.gdx.Application.LOG_INFO;
 public class LetterTileActionListener extends InputListener {
     private final ArrayList<LetterTile> tiles;
     private final ArrayList<LetterTile> touched = new ArrayList<LetterTile>();
-
     private static final Logger LOGGER = new Logger(LetterTileActionListener.class.getName(),LOG_INFO);
-
-    private String word = "";
-
+    private String currentWord = "";
     private LetterTile hovering = null;
-    private WordChecker checker;
 
     public LetterTileActionListener(ArrayList<LetterTile> tiles){
-        try{
-            checker = new WordChecker(DatabaseLoader.loadToMyMemoryDB());
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
-
         this.tiles = tiles;
     }
 
@@ -71,17 +58,13 @@ public class LetterTileActionListener extends InputListener {
     }
 
     public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
-        word = "";
+        currentWord = "";
         for(LetterTile t : this.touched){
             t.unhighlight();
-            word = word.concat(String.valueOf(t.getLetter()));
+            currentWord = currentWord.concat(String.valueOf(t.getLetter()));
         }
         touched.clear();
-
-        if(checker.isValid(word)){
-            Player.getInstance().addWord(word);
-        }
-
-        LOGGER.info(word);
+        Player.getInstance().addWord(currentWord);
+        LOGGER.info(currentWord);
     }
 }

@@ -12,7 +12,6 @@ import org.ENSEACS.core.UI.state.GameState;
 import org.ENSEACS.core.UI.state.UIContext;
 
 public class TitleScreenState extends GameState {
-    private final Stage stage = new Stage();
     private TitleScreenComponents tsc;
 
     public TitleScreenState(UIContext uic) {
