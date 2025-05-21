@@ -12,5 +12,5 @@ public class Constants {
     public static final String THANKS_FOR_PLAYING_MESSAGE = "Thanks for playing! Your score: ";
     public static final String PLAY_AGAIN_MESSAGE = "Play again?";
     public static final String EXIT_MESSAGE = "Exit";
-    public static final String RULES_MESSAGE = "Boggle Rules:\n\n1. Form words by connecting adjacent letters.\n2. Words must be 3 letters or longer.\n4. Long words earn more points.";
+    public static final String RULES_MESSAGE = "Boggle Rules:\n\n1. Form words by connecting adjacent letters.\n2. Words must be 3 letters or longer.\n3. Long words earn more points.";
 }
