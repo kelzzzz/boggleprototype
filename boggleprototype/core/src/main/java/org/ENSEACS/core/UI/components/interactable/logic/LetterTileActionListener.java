@@ -16,7 +16,7 @@ import static com.badlogic.gdx.Application.LOG_INFO;
 
 public class LetterTileActionListener extends InputListener {
     private final ArrayList<LetterTile> tiles;
-    private final ArrayList<LetterTile> touched = new ArrayList<LetterTile>();
+    private final ArrayList<LetterTile> touched = new ArrayList<>();
     private static final Logger LOGGER = new Logger(LetterTileActionListener.class.getName(),LOG_INFO);
     private String currentWord = "";
     private LetterTile hovering = null;

@@ -11,8 +11,8 @@ import static org.ENSEACS.core.util.Constants.SKIN_GLASSY_UI_JSON_PATH;
  * Author: Kels C.
  * ENSEA 2025 */
 public abstract class BoggleButton {
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     protected final int dimensionsW;
     protected final int dimensionsH;

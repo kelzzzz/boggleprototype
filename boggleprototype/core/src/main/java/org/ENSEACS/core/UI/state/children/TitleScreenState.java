@@ -4,9 +4,7 @@ package org.ENSEACS.core.UI.state.children;
  * Author: Kels C.
  * ENSEA 2025 */
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import org.ENSEACS.core.UI.stage.TitleScreenComponents;
 import org.ENSEACS.core.UI.state.GameState;
 import org.ENSEACS.core.UI.state.UIContext;

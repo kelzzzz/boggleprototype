@@ -7,11 +7,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.Logger;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-import org.ENSEACS.core.UI.state.children.MainGameplayState;
 import org.ENSEACS.core.UI.state.UIContext;
 import org.ENSEACS.core.UI.state.children.TitleScreenState;
-
-import java.util.ArrayList;
 
 import static com.badlogic.gdx.Application.LOG_INFO;
 import static org.ENSEACS.core.util.Constants.BACKGROUND_TEXTURE_PATH;

@@ -12,7 +12,8 @@ Tags: #Game_Project
 	- Word are a minimum length of 3
 	- Boggle scoring system * 100
 	- You drag the cursor across a word as long as the letters are connected in some direction
-	- When a letter is no longer in any word (cleared), it becomes grey
+	- The game ends when a timer runs out
+    - The same word cannot be created twice
 - Score tracking and score system
 - Word database access (SQLite? HyperSQL?)
 	- Filtering out slurs from the DB so they can't be made

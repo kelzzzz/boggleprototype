@@ -9,10 +9,13 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import org.ENSEACS.core.UI.components.interactable.BoggleButton;
 import org.ENSEACS.core.gamelogic.Player;
 
+import static org.ENSEACS.core.util.Constants.*;
+
 /*
  * Author: Kels C.
  * ENSEA 2025 */
 public class EndScreen {
+
     Stage stage;
     public BoggleButton replayButton;
     public BoggleButton exitButton;
@@ -34,7 +37,7 @@ public class EndScreen {
     }
 
     private void initMessage() {
-        thankYouMessage = new Label("Thanks for playing! Your score: " + Player.getInstance().getScore(),
+        thankYouMessage = new Label(THANKS_FOR_PLAYING_MESSAGE + Player.getInstance().getScore(),
                 replayButton.getSkin());
         thankYouMessage.setX(200);
         thankYouMessage.setY(210);
@@ -45,8 +48,8 @@ public class EndScreen {
         replayButton = new BoggleButton(230, 150, 100, 50) {};
         exitButton = new BoggleButton(250, 100, 60, 50) {};
 
-        replayButton.setText("Play again?");
-        exitButton.setText("Exit");
+        replayButton.setText(PLAY_AGAIN_MESSAGE);
+        exitButton.setText(EXIT_MESSAGE);
 
         replayButton.getButton().addListener(getInputListener(false));
         exitButton.getButton().addListener(getInputListener(true));

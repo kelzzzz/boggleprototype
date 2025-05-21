@@ -17,7 +17,6 @@ import static org.ENSEACS.core.util.Constants.SKIN_GLASSY_UI_JSON_PATH;
 public class UserDisplay {
 
     private final Skin skin = new Skin(Gdx.files.internal(SKIN_GLASSY_UI_JSON_PATH));
-    private final TextButton.TextButtonStyle textButtonStyle = new TextButton.TextButtonStyle();
     private final Label score = new Label("Score: " + 0, skin);
     private final WordScrollPane wsp = new WordScrollPane(335,160,100f);
     private CountdownTimer timer;

@@ -11,10 +11,12 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import org.ENSEACS.core.UI.components.interactable.BoggleButton;
 
+import static org.ENSEACS.core.util.Constants.*;
+
 /*Author: Thomas Czerwien*/
 public class TitleScreenComponents {
-    private Stage stage;
-    private final Skin buttonSkin = new Skin(Gdx.files.internal("skin/glassy-ui.json"));
+    private final Stage stage;
+    private final Skin buttonSkin = new Skin(Gdx.files.internal(SKIN_GLASSY_UI_JSON_PATH));
     private final TextButton.TextButtonStyle textButtonStyle = new TextButton.TextButtonStyle();
     public boolean playResponse = false;
 
@@ -26,8 +28,8 @@ public class TitleScreenComponents {
     public TitleScreenComponents(Stage stage){
         this.stage = stage;
         textButtonStyle.font = new BitmapFont();
-        textButtonStyle.up = buttonSkin.getDrawable("button-small");
-        textButtonStyle.down = buttonSkin.getDrawable("button-small-down");
+        textButtonStyle.up = buttonSkin.getDrawable(BUTTON_SMALL_REGION);
+        textButtonStyle.down = buttonSkin.getDrawable(BUTTON_SMALL_DOWN_REGION);
 
         initTitle(stage);
 
@@ -43,7 +45,7 @@ public class TitleScreenComponents {
 
     private Label getRulesLabel(Stage stage) {
         Label rules = new Label(
-                "Boggle Rules:\n\n1. Form words by connecting adjacent letters.\n2. Words must be 3 letters or longer.\n4. Long words earn more points.", buttonSkin);
+                RULES_MESSAGE, buttonSkin);
         rules.setFontScale(1f);
         rules.setWrap(true);
         rules.setWidth(500);
@@ -153,7 +155,7 @@ public class TitleScreenComponents {
     }
 
     private void initTitle(Stage stage) {
-        Image titleImage = new Image(new Texture(Gdx.files.internal("assets/GameTitle.png")));
+        Image titleImage = new Image(new Texture(Gdx.files.internal(GAME_TITLE_TEXTURE_PATH)));
         titleImage.setPosition(125, 210);
         stage.addActor(titleImage);
     }

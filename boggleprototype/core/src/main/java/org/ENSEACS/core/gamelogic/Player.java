@@ -1,7 +1,6 @@
 package org.ENSEACS.core.gamelogic;
 import org.ENSEACS.core.database.DatabaseLoader;
 import org.ENSEACS.core.database.WordChecker;
-import org.ENSEACS.core.gamelogic.PointsCalculator;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ public class Player {
     private static Player playerInstance;
     private int score = 0;
     private WordChecker checker;
-    private ArrayList<String> wordsCreated = new ArrayList<>();
+    private final ArrayList<String> wordsCreated = new ArrayList<>();
 
     private Player(){            try{
         checker = new WordChecker(DatabaseLoader.loadToMyMemoryDB());
@@ -39,10 +38,6 @@ public class Player {
 
     public int getScore() {
         return score;
-    }
-
-    public ArrayList<String> getWordsCreated(){
-        return this.wordsCreated;
     }
 
     public String getWordsCreatedAsString(){
