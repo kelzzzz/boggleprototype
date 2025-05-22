@@ -21,7 +21,7 @@ public class BoggleLetterDistributionGenerator {
 
     private static final Logger LOGGER = new Logger(BoggleLetterDistributionGenerator.class.getName(),LOG_INFO);
 
-    private String[] DICEDISTRIBUTIONS = {
+    private final String[] DICEDISTRIBUTIONS = {
             "AAEEGN",
             "ABBJOO",
             "ACHOPS",

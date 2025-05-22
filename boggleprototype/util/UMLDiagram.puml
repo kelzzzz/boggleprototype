@@ -1,0 +1,215 @@
+@startuml
+' UI Components
+package "gamelogic"{
+    class Player{
+        - Player playerInstance
+        - int score
+        - WordChecker checker
+        - ArrayList<String> wordsCreated
+        + Player getInstance()
+        + void addWord()
+        + String getListOfWordsCreated()
+    }
+    class PointsCalculator{
+        + int calculateScore()
+    }
+}
+
+package "UI" {
+    package "components"{
+        package "interactable"{
+            class LetterTileActionListener{
+                - List<LetterTile> touched
+                - List<LetterTile> tiles
+                - String currentWord
+                - LetterTile hovering
+                + void touchDragged()
+                + boolean touchDown()
+                + void touchUp()
+            }
+        }
+
+      LetterTileActionListener ---> LetterTile : provides action listeners
+
+      abstract class BoggleButton {
+        - x: int
+        - y: int
+        - button: TextButton
+        - dimensionsW: int
+        - dimensionsH: int
+        - Skin skin
+        - TextButtonStyle style
+        +BoggleButton(x: int, y: int, w: int, h: int, style: TextButtonStyle)
+      }
+
+      class LetterTile {
+        - letter: char
+        +LetterTile(x: int, y: int, w: int, h: int, style: TextButtonStyle)
+      }
+
+      class CountdownTimer{
+        - long endTime
+        + updateTime()
+        + getTimeoutResponse()
+      }
+
+      class WordScrollPane{
+        - gdx.scenes.scene2d.ui elements...
+        + initContainer()
+        + initScrollPane()
+        + updateWordsInDisplay()
+        + getScrollPane()
+      }
+      BoggleButton --> LetterTile
+    }
+
+    package "stage"{
+        class LetterTileGrid{
+            -List<LetterTile> tiles
+            -BoggleLetterDistributionGenerator bldg
+            +addLetterTilesToStage() : void
+            +distributeLettersToTiles(String letters) : void
+            +initLetterTilesInGrid(int x, int y) : void
+            +addNewTileToGrid(int x, int y) : void
+        }
+        class EndScreen{
+            - Stage stage
+            - BoggleButton replayButton
+            - BoggleButton exitButton
+            - boolean playResponse
+            - Label thankYouMessage
+            + initComponents()
+            + clickPlayAgainResponse()
+        }
+        class TitleScreenComponents {
+          - stage: Stage
+          +TitleScreenComponents(stage: Stage)
+        }
+       class UserDisplay{
+            - gdx.scenes.scene2d.ui elements...
+            - WordScrollPane wsp
+            - CountdownTimer timer
+            + getTimer()
+            + initComponents()
+            + updateHud()
+       }
+    }
+    package "state" {
+        package "children"{
+              class MainGameplayState {
+                - UserDisplay hud
+                +create(): void
+                +render(): void
+                +refreshTimerResponse() : void
+                +onTimerRunOut() : void
+              }
+
+              class TitleScreenState {
+                - tsc: TitleScreenComponents
+                +create(): void
+                +render(): void
+                +clickPlay() : void
+              }
+
+              class EndScreenState{
+                - EndScreen es
+                + create() : void
+                + render() : void
+                + clickPlay() : void
+              }
+        }
+      interface State{
+        void clickPlay();
+        void onTimerRunOut();
+      }
+      class com.badlogic.gdx.Game{
+        -...
+        +...
+      }
+
+      abstract class GameState{
+        - UIContext uic
+        - Stage stage
+        + GameState(UIContext uic)
+        + create() : void
+        + render() : void
+        + clickPlay() : void
+        + onTimerRunout() : void
+      }
+      class UIContext {
+        - state: State
+        +setState(state: Game): void
+        +renderState(): void
+      }
+    }
+}
+
+' Database Layer
+package "database" {
+  class Databaseloader <<static>> {
+    +loadToMyMemoryDB(): Connection
+  }
+
+  class WordChecker {
+    - connection: Connection
+    +WordChecker(db: Databaseloader)
+    +isValid(word: String): boolean
+  }
+
+  class WordCheckerTest {
+    +testDatabaseConnectionIsValid(): void
+    +testifCarIsValid(): void
+    +testifCrazyIsValid(): void
+    +testforInvalidWord(): void
+    +WordCaseInsensitive(): void
+  }
+
+}
+package "util"{
+    class BoggleLetterDistributionGenerator{
+        - String[] DICEDISTRIBUTIONS
+        + shuffleDice()
+        + rollDie()
+        + getLetterDistributions()
+    }
+    class Constants{
+        - constant variables....
+    }
+}
+class Boggle{
+    - FitViewport viewport
+    - Logger Logger
+    - Texture background
+    - SpriteBatch sprite
+    - UIContext context
+
+    +create() : void
+    +render() : void
+    +resize() : void
+    +drawBgTexture(Texture t) : void
+}
+
+WordChecker --> Databaseloader : uses
+WordCheckerTest --> WordChecker : tests
+UIContext --> GameState : tracks
+GameState --> State : implements
+GameState --> Game : extends
+MainGameplayState --> GameState : extends
+TitleScreenState --> GameState : extends
+EndScreenState --> GameState : extends
+LetterTileGrid <- LetterTile
+EndScreen <- BoggleButton
+TitleScreenComponents <- BoggleButton
+UserDisplay <- BoggleButton
+UserDisplay <- CountdownTimer
+UserDisplay <- WordScrollPane
+Boggle --> MainGameplayState : sets state
+Boggle --> UIContext : references
+"state" ---> "stage" : states render stages
+"stage" -[hidden]- "components"
+BoggleLetterDistributionGenerator --> LetterTileGrid
+LetterTileActionListener --> Player : player persists words & score
+PointsCalculator -> Player : provides score
+WordChecker -> Player : validates words
+
+@enduml

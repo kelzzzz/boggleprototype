@@ -1,4 +1,4 @@
-import org.ENSEACS.core.database.Databaseloader;
+import org.ENSEACS.core.database.DatabaseLoader;
 import org.ENSEACS.core.database.WordChecker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,7 +17,7 @@ public class WordCheckerTest {
     public static void setup() throws SQLException {
         Headless.loadHeadless();
         // We establish a Connection with the database and we call our method, LoadtoMyMEMORY
-        connection = Databaseloader.loadToMyMemoryDB();
+        connection = DatabaseLoader.loadToMyMemoryDB();
         // This variable will help us using our Word Checker class to check certain words
         checkingword = new WordChecker(connection);
 
