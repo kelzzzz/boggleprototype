@@ -7,8 +7,7 @@ import java.sql.*;
 public class DatabaseLoader {
     // To load the file, we need a method that uses the Connection API class
     public static Connection loadToMyMemoryDB() {
-        String filePath = Gdx.files.internal("assets/dictionary.db").file().getAbsolutePath();
-        System.out.println(filePath);
+        String filePath = Gdx.files.internal("dictionary.db").file().getAbsolutePath();
 
         try {
             Connection connectionofDisk = DriverManager.getConnection("jdbc:sqlite:" + filePath);
