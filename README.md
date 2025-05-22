@@ -12,4 +12,4 @@ To run this application, first clone this repository or download the `boggleprot
 
 Then, run the command `java -jar your/path/to/the/jar/here/boggleprototype-desktop-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
-If the application does not start, there may be a compatibility issue with your Java version.
+If the application does not start, there may be a compatibility issue with your Java version as this was compiled with Java 11.
