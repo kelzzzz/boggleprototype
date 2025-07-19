@@ -1,6 +1,6 @@
 ## Boggle Clone for ENSEA 2025
 
-This application is a simple Java version of the board game Boggle, created with LibGDX.
+This application is a simple Java version of the board game Boggle, created with LibGDX. [View a video here](https://drive.google.com/file/d/1qrtZzm7QOZFiEtGSPKkptx9aNZgwpuUb/view?usp=sharing).
 
 <img src="https://github.com/kelzzzz/boggleprototype/blob/main/boggleprototype/util/screenshot1.png?raw=true"/>
 
