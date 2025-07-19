@@ -2,7 +2,7 @@
 
 This application is a simple Java version of the board game Boggle, created with LibGDX.
 
-<img src="https://raw.githubusercontent.com/kelzzzz/boggleprototype/refs/heads/main/boggleprototype/util/ensea-boggle-gif.gif"/>
+<img src="https://github.com/kelzzzz/boggleprototype/blob/main/boggleprototype/util/screenshot1.png?raw=true"/>
 
 In this game, you search for words using various random letters on the board, and find as many words as you can under a certain time limit.
 
